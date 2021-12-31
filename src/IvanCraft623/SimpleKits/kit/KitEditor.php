@@ -128,10 +128,13 @@ final class KitEditor implements Listener {
 				case "done":
 				case "save":
 					$offHand = $player->getOffHandInventory()->getItem(0);
+					$this->setInventoryItems($player->getInventory()->getContents());
+					$this->setArmorInventoryItems($player->getArmorInventory()->getContents());
+					$this->setOffHandItem($offHand->isNull() ? null : $offHand);
 					$kit = new Kit($this->name, $this->price, $this->description, $this->permission,
-						$player->getInventory()->getContents(),
-						$player->getArmorInventory()->getContents(),
-						$offHand->isNull() ? null : $offHand
+						$this->inventoryItems,
+						$this->armorInventoryItems,
+						$this->offHandItem
 					);
 					$this->save($kit);
 				break;

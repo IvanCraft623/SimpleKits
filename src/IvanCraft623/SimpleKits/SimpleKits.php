@@ -13,6 +13,7 @@ use IvanCraft623\SimpleKits\task\PlayerDataUpdateTask;
 use IvanCraft623\SimpleKits\translator\Translator;
 use IvanCraft623\SimpleKits\kit\KitManager;
 
+use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\player\Player;
 use pocketmine\utils\SingletonTrait;
@@ -30,7 +31,7 @@ final class SimpleKits extends PluginBase {
 
 	private ?string $economy = null;
 
-	private ?PluginBase $economyInstance = null;
+	private ?Plugin $economyInstance = null;
 
 	public const ECONOMYAPI = "EconomyAPI";
 	public const BEDROCKECONOMY = "BedrockEconomy";
@@ -104,14 +105,16 @@ final class SimpleKits extends PluginBase {
 		}
 	}
 
-	public function getEconomy(): ?PluginBase {
-		return $this->economy;
+	public function getEconomy(): ?Plugin {
+		return $this->economyInstance;
 	}
 
 	public function getMoney(Player $player): ?int {
 		if ($this->economy === self::ECONOMYAPI) {
+			/** @phpstan-ignore-next-line */
 			return (($money = $this->economyInstance->myMoney($player)) === false) ? null : $money;
 		} elseif ($this->economy === self::BEDROCKECONOMY) {
+			/** @phpstan-ignore-next-line */
 			$manager = $this->economyInstance->getAccountManager();
 			if (!$manager->hasAccount($player->getXuid())) {
 				if (!$manager->addAccount($player->getXuid(), $player->getName())) {
@@ -126,8 +129,10 @@ final class SimpleKits extends PluginBase {
 
 	public function substractMoney(Player $player, float $amount): bool {
 		if ($this->economy === self::ECONOMYAPI) {
+			/** @phpstan-ignore-next-line */
 			return $this->economyInstance->reduceMoney($player, $amount) === $this->economyInstance::RET_SUCCESS;
 		} elseif ($this->economy === self::BEDROCKECONOMY) {
+			/** @phpstan-ignore-next-line */
 			$manager = $this->economyInstance->getAccountManager();
 			if (!$manager->hasAccount($player->getXuid())) {
 				if (!$manager->addAccount($player->getXuid(), $player->getName())) {

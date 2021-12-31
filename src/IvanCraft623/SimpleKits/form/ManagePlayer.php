@@ -137,7 +137,7 @@ final class ManagePlayer {
 		$playerdata = $this->playerdata;
 		$form = new SimpleForm(function (Player $player, string $kit = null) {
 			if ($kit === null) {
-				$this->sendManagePlayerData($playerdata);
+				$this->sendMain();
 				return;
 			}
 

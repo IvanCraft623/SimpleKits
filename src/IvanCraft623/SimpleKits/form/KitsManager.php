@@ -6,6 +6,7 @@ namespace IvanCraft623\SimpleKits\form;
 
 use IvanCraft623\SimpleKits\SimpleKits;
 use IvanCraft623\SimpleKits\kit\Kit;
+use IvanCraft623\SimpleKits\kit\KitEditor;
 use IvanCraft623\SimpleKits\form\api\ModalForm;
 use IvanCraft623\SimpleKits\form\api\SimpleForm;
 use IvanCraft623\SimpleKits\translator\Translator;
