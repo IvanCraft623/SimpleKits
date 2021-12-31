@@ -34,6 +34,7 @@ Command | Description | Permission
 - Manage Kits in-game
 - Easy Kits Creation
 - Support Items with custon NamedTag
+- Support Kits with Permission
 - An easy API for developers
 - And more...!
 
@@ -43,7 +44,7 @@ Command | Description | Permission
 To create a kit you can run the command `/simplekits create <name>` which will open a form, [view video](https://www.youtube.com/watch?v=5k2tT3mUNec).
 
 ## Enable/disable command
-The `/kit` & `/kits` commands can be easily enabled or disabled using the config.yml file.
+The `/kit` & `/kits` commands can be easily enabled or disabled using the `config.yml` file.
 ```yaml
 # Enable or disable "/kit" command (Command to claim selected kit)
 kit-command: true
