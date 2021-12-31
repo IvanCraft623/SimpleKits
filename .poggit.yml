@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/IvanCraft623/SimpleKits
+build-by-default: true
+branches:
+- main
+projects:
+  SimpleKits:
+    libs:
+      - src: poggit/libasynql/libasynql
+        version: ^4.0.0
+...
