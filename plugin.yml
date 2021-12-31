@@ -1,0 +1,16 @@
+---
+name: SimpleKits
+author: IvanCraft623
+version: 0.0.1
+main: IvanCraft623\SimpleKits\SimpleKits
+description: "An easy-to-use kit manager for PMMP"
+api: 4.0.0
+prefix: "§8[§bSimpleKits] §r"
+permissions:
+  simplekits.kits.command:
+    default: true
+    descrption: "Allows use kits command"
+  simplekits.simplekits.command:
+    default: op
+    descrption: "Allows use SimpleKits main command"
+...

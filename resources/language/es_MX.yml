@@ -1,0 +1,98 @@
+---
+# Nombre del idioma en el idioma original
+name: "Español"
+
+economy.error: "%prefix §c¡Ocurrió un error inesperado con el sistema de economía!"
+invalid.command: "%prefix §cEl comando ejecutado no fue encontrado, use help"
+message.error: "§c¡Error!"
+no.permission: "%prefix §c¡No tienes permiso para hacer esto!"
+only-ingame: "%prefix §c¡Esta característica solo puede ser accedida dentro del juego!"
+
+selected: "§l§a» §rSeleccionado §l§a«"
+
+command.kits.title: "§aLista de Kits (%kits)"
+command.kits.content: "§b%kit §f> Precio: §7$%price§f, Descripción: §7%description§f, Permiso: §7%permission§f, Items: §7%items"
+
+command.simplekits.usage.title: "§bUso de Comandos de §eSimpleKits"
+command.simplekits.usage.line1: "§a/simplekits create <nombre> §7Crea un kit."
+command.simplekits.usage.line2: "§a/simplekits kits §7Administra kits."
+command.simplekits.usage.line3: "§a/simplekits players [página] §7Administra jugadores."
+command.simplekits.usage.line4: "§a/simplekits playerdata §7Administra datos de un jugador específico."
+command.simplekits.players.page.no-numeric: "%prefix §c¡El argumento página debe ser de tipo numérico!"
+command.simplekits.create.usage: "%prefix §cUso: /simplekits create <nombre>"
+command.simplekits.create.aready-exists: "%prefix §c¡Ya existe un kit con ese nombre!"
+command.simplekits.playerdata.usage: "%prefix §cUso: /simplekits playerdata <nombre>"
+command.simplekits.playerdata.no-found: "%prefix §c¡%player no pudo ser encontrado en nuestra base de datos!"
+
+kit.already.purchased: "%prefix §c¡Ya has comprado este kit!"
+kit.claim.success: "%prefix §aHas reclamado con éxito el kit: §b%kit"
+kit.claim.error: "%prefix §cNo se pudo encontrar tu kit seleccionado, si cree que es un error comuníquese con un administrador."
+kit.deselect.success: "%prefix §c¡Has deseleccionado exitosamente el kit §b%kit§c!"
+kit.no.enough.money: "%prefix §c¡No tienes dinero suficiente para comprar este kit!"
+kit.premium.no.permission: "%prefix §c¡No tienes permiso para poseer este kit!"
+kit.purchase.success: "%prefix §a¡Has comprado exitosamente el kit §b%kit§a!"
+kit.select.success: "%prefix §b¡Has seleccionado exitosamente el kit §a%kit§b!"
+
+kit.editor.enter: "%prefix §a¡Has entrado exitosamente al modo editor de kit! §7Edita tu inventario y para ver mas opciones escribe en el chat: help"
+kit.editor.save: "%prefix §a¡El kit %kit ha sido guardado exitosamente!"
+kit.editor.data.saved: "%prefix §a¡Precio, descripción y permiso han sido guardados!"
+
+kit.editor.form.title: "Editor de kit"
+kit.editor.form.label: "Edita los datos del kit"
+kit.editor.form.price: "Precio:"
+kit.editor.form.description: "Descripción:"
+kit.editor.form.permission: "Permiso:"
+kit.editor.price.error: "§c¡Precio proveído inválido!"
+kit.editor.help.title: "§bComandos de Configuración de §eSimpleKits"
+kit.editor.help.line1: "§adone: §7Guarda el kit en la base de datos."
+
+kit.data.name: "§fKit: §a%kit"
+kit.data.price: "§fPrecio: §a%price"
+kit.data.description: "§fDescripción: §a%description"
+
+player.data.name: "§fNombre: §a%player"
+player.data.purchasedkits: "§fKits comprados: §a%kits"
+player.data.selectedkit: "§fKit seleccionado: §a%kit"
+
+form.add: "Añadir"
+form.buy: "Comprar"
+form.cancel: "Cancelar"
+form.delete: "§4Eliminar"
+form.edit: "Editar"
+form.remove: "Remover"
+form.selectoption: "§7Selecciona una opción"
+
+form.delete.confirm: "§e¿Estas seguro de eliminar este elemento? ¡Este cambio será irreversible!"
+
+form.selectkit.title: "Selecciona un kit"
+form.selectkit.free: "Kits gratuitos"
+form.selectkit.buy: "Comprar kits"
+form.selectkit.premium: "Kits premium"
+form.selectkit.purchased: "Mis kits comprados (%kits)"
+
+form.purchasekit.title: "Compra un kit"
+form.purchasekit.content.mymoney: "§fTu Dinero: §a%money"
+form.purchasekit.content.text: "§7¡Tendrás acceso completo a este kit!"
+
+form.kitsmanager.title: "Kits manager"
+form.kitsmanager.list: "Lista de kits"
+form.kitsmanager.delete.success: "%prefix §e¡El kit §b%kit §eha sido §celiminado §eexitosamente!"
+
+form.playerslist.title: "Lista de jugadores"
+form.playerslist.next-page: "Siguiente Pagina"
+form.playerslist.page-notfound: "%prefix §c¡La página %page no fue encontrada!"
+
+form.manageplayer.title: "Administrar jugador"
+form.manageplayer.editpurchased: "Editar Kits Comprados"
+form.manageplayer.changeselected: "Cambiar el Kit Seleccionado"
+form.manageplayer.delete.success: "%prefix §e¡El jugador §b%player §eha sido §celiminado §eexitosamente!"
+form.manageplayer.editpurchased.add.success: "%prefix §a¡Has agregado exitosamente el kit %kit a §9%player§a!"
+form.manageplayer.editpurchased.remove.success: "%prefix §a¡Has removido exitosamente el kit %kit a §9%player§a!"
+
+form.simplekitsmanager.title: "Administrador de kits"
+form.simplekitsmanager.create: "Crear un kit"
+
+form.simplekitsmanager.create.label: "Escribe un nombre único para el kit"
+form.simplekitsmanager.create.error: "§cParece que ese nombre ya está en uso"
+form.simplekitsmanager.create.name: "Nombre:"
+...

@@ -1,0 +1,98 @@
+---
+# Language name in the original language
+name: "English"
+
+economy.error: "%prefix §cAn unexpected error occurred with the economy system!"
+invalid.command: "%prefix §cExecuted command was not found, use help."
+message.error: "§cError!"
+no.permission: "%prefix §cYou don't have permission to do this!"
+only-ingame: "%prefix §cThis feature is only accessible in-game!"
+
+selected: "§l§a» §rSelected §l§a«"
+
+command.kits.title: "§aKits List (%kits)"
+command.kits.content: "§b%kit §f> Price: §7$%price§f, Description: §7%description§f, Permission: §7%permission§f, Items: §7%items"
+
+command.simplekits.usage.title: "§eSimpleKits §bCommands Usage"
+command.simplekits.usage.line1: "§a/simplekits create <name> §7Create a kit."
+command.simplekits.usage.line2: "§a/simplekits kits §7Manage kits."
+command.simplekits.usage.line3: "§a/simplekits players [page] §7Manage players."
+command.simplekits.usage.line4: "§a/simplekits playerdata §7Manage an specific player data."
+command.simplekits.players.page.no-numeric: "%prefix §cArgument page must be type numeric!"
+command.simplekits.create.usage: "%prefix §cUsage: /simplekits create <name>"
+command.simplekits.create.aready-exists: "%prefix §cThere is already a kit with that name!"
+command.simplekits.playerdata.usage: "%prefix §cUsage: /simplekits playerdata <name>"
+command.simplekits.playerdata.no-found: "%prefix §c%player was not found in our database!"
+
+kit.already.purchased: "%prefix §cYou have already purchased this kit!"
+kit.claim.success: "%prefix §aYou have successfully claimed the kit: §b%kit"
+kit.claim.error: "%prefix §cCould not find your selected kit, if you think this is an error contact an administrator."
+kit.deselect.success: "%prefix §cYou have successfully deselected the §b%kit §ckit!"
+kit.no.enough.money: "%prefix §cYou don't have enough money to buy this kit!"
+kit.premium.no.permission: "%prefix §cYou are not allowed to own this kit!"
+kit.purchase.success: "%prefix §aYou have successfully purchased the §b%kit §akit!"
+kit.select.success: "%prefix §bYou have successfully selected the §a%kit §bkit!"
+
+kit.editor.enter: "%prefix §aYou have successfully entered kit editor mode! §7Edit your inventory and to see more options write in the chat: help"
+kit.editor.save: "%prefix §a%kit kit has been successfully saved!"
+kit.editor.data.saved: "%prefix §aPrice, description and permission has been saved!"
+
+kit.editor.form.title: "Kit editor"
+kit.editor.form.label: "Edit the kit data"
+kit.editor.form.price: "Price:"
+kit.editor.form.description: "Description:"
+kit.editor.form.permission: "Permission:"
+kit.editor.price.error: "§cInvalid price provided!"
+kit.editor.help.title: "§eSimpleKits §bConfiguration Commands"
+kit.editor.help.line1: "§adone: §7Save the kit in the database."
+
+kit.data.name: "§fKit: §a%kit"
+kit.data.price: "§fPrice: §a%price"
+kit.data.description: "§fDescription: §a%description"
+
+player.data.name: "§fName: §a%player"
+player.data.purchasedkits: "§fPurchased kits: §a%kits"
+player.data.selectedkit: "§fSelected kit: §a%kit"
+
+form.add: "Add"
+form.buy: "Buy"
+form.cancel: "Cancel"
+form.delete: "§4Delete"
+form.edit: "Edit"
+form.remove: "Remove"
+form.selectoption: "§7Select an option"
+
+form.delete.confirm: "§eAre you sure to delete this element? This change will be irreversible!"
+
+form.selectkit.title: "Select a kit"
+form.selectkit.free: "Free kits"
+form.selectkit.buy: "Buy kits"
+form.selectkit.premium: "Premium kits"
+form.selectkit.purchased: "My purchased kits (%kits)"
+
+form.purchasekit.title: "Purchase a kit"
+form.purchasekit.content.mymoney: "§fYour Money: §a%money"
+form.purchasekit.content.text: "§7You will have full access to this kit!"
+
+form.kitsmanager.title: "Kits manager"
+form.kitsmanager.list: "Kits list"
+form.kitsmanager.delete.success: "%prefix §eKit §b%kit §ehas been §cdeleted §esuccessfully!"
+
+form.playerslist.title: "Players list"
+form.playerslist.next-page: "Next Page"
+form.playerslist.page-notfound: "%prefix §cPage %page was not found!"
+
+form.manageplayer.title: "Player Manage"
+form.manageplayer.editpurchased: "Edit Purchased kit"
+form.manageplayer.changeselected: "Change Selected Kit"
+form.manageplayer.delete.success: "%prefix §ePlayer §b%player §ehas been §cdeleted §esuccessfully!"
+form.manageplayer.editpurchased.add.success: "%prefix §aYou have successfully added the kit %kit to §9%player§a!"
+form.manageplayer.editpurchased.remove.success: "%prefix §aYou have successfully removed the kit %kit to §9%player§a!"
+
+form.simplekitsmanager.title: "Kits administrator"
+form.simplekitsmanager.create: "Create a kit"
+
+form.simplekitsmanager.create.label: "Write a unique name for the kit"
+form.simplekitsmanager.create.error: "§cIt seems that name is already in use"
+form.simplekitsmanager.create.name: "Name:"
+...
